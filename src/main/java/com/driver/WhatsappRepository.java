@@ -99,8 +99,9 @@ public class WhatsappRepository {
     public int createMessage(String message){
         messageId+=1;
         Date d = new Date();
-        Message message1 = new Message(messageId,message,d);
-
+        Message message1 = new Message();
+        message1.setId(messageId);
+        message1.setContent(message);
         return messageId;
     }
 }

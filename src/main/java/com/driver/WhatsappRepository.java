@@ -98,7 +98,7 @@ public class WhatsappRepository {
     }
     public int createMessage(String message){
         messageId+=1;
-        Date d = new Date(1);
+        Date d = new Date("2023-01-11");
         Message message1 = new Message(messageId,message,d);
 
         return messageId;
